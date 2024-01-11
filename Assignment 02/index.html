@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <!-- Title Name and icon of this page-->
+        <title>Upskilling Form - Assignment 2</title>
+        <link rel="icon" href="images/upskilling.jpg">
+
+        <!-- Metadata information to help SEO-->
+        <meta name="keywords" content="Upskilling, registration form">
+        <meta name="description" content="This page to insert your information into registration form">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Rania Saleh - Upskilling Course">
+    </head>
+    <body style="background-color: rgb(0, 8, 66);">
+        <form style="background-color: rgb(0, 146, 71);">
+            <!-- Here we are grouping Required and Optional together in Upskilling Form-->
+            <fieldset> 
+                <legend style="background-color: rgba(255, 204, 71); ">Upskilling Form</legend> 
+
+                <!-- Here we will list all the Required Fields-->
+                <fieldset>
+                    <legend style="background-color: rgba(255, 204, 71);">Required Fields</legend> 
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td> <label>First Name: </label> </td>
+                                    <td> <input required type="text" name="fName" minlength="2" maxlength="20"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label>Last Name: </label> </td>
+                                    <td> <input required  type="text" name="lName" minlength="2" maxlength="20"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label>Phone: </label> </td>
+                                    <td> <input required type="tel" name="phone"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label>Email: </label> </td>
+                                    <td> <input required type="email" name="email"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label>Password: </label> </td>
+                                    <td> <input required type="password" name="pass"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </fieldset>
+
+                <br><br>
+
+                <!-- Here we will list all the Optional Fields-->
+                <fieldset>
+                    <legend style="background-color: rgba(255, 204, 71);">Optional Fields</legend> 
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td> <label>Package: </label> </td>
+                                <td> <select name="package" style="width: 80%;">
+                                    <option value="">choose one</option>
+                                    <option value="Online">Online</option>
+                                        <option value="Offline">Offline</option>
+                                     </select>  </td>
+                            </tr>
+
+                            <tr>
+                                <td> <label>City: </label> </td>
+                                <td> <select name="city" >
+                                    <option value="">choose one</option>
+                                    <option value="Alex">Alex</option>
+                                    <option value="Cairo">Cairo</option>
+                                    <option value="Giza">Giza</option>
+                                     </select>  </td>
+                            </tr>
+
+                            <tr>
+                                <td> <label>Gender: </label> </td>
+                                <td> <input type="radio" name="gender" value="male"> Male
+                                     <input type="radio" name="gender" value="female"> Female </td>
+                            </tr>
+
+                            <tr>
+                                <td> <label>Languages: </label> </td>
+                                <td> <input type="checkbox" name="language" value="HTML"> HTML
+                                     <input type="checkbox" name="language" value="CSS"> CSS
+                                     <input type="checkbox" name="language" value="JavaScript"> JS </td>
+                            </tr>
+
+                            <tr>
+                                <td> <label>Fees: </label> </td>
+                                <td> <div style="position: absolute; left: 85px;" class="value left">1000</div>
+                                     <input type="range" name="feesAmount" min="1000" max="5000">
+                                     <div style="position:absolute; right: 1085px;" class="value right">5000</div> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </fieldset>
+
+                <button type="submit" style="margin-top: 10px ;"> Register</button>
+            </fieldset>
+
+
+
+
+            <br>
+        </form>
+
+        <br>
+    </body>
+</html>
